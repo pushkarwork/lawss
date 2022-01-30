@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ContactUsHeading {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vmax;
+
+  /* border-bottom: 1px solid black; */
+}
+
+.ContactInfo {
+  display: flex;
+  /* border: 5px solid black; */
+  justify-content: space-around;
+  margin-top: 5vmax;
+  margin-bottom: 3vmax;
+}
+
+.personal-info-box {
+  text-align: center;
+  /* border: 3px solid red; */
+  width: 25vmax;
+}
+
+.personal-info-box > p > span:hover {
+  color: orangered;
+  transition: all 0.3s;
+}
+
+.personal-info-box > div:hover {
+  color: orangered;
+  transition: all 0.3s;
+}
+
+.icon {
+  position: relative;
+  /* border: 1px solid #dbdbdb; */
+  border-radius: 100%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 50px;
+
+  margin-bottom: 1vmax;
+}
+
+.icon:before {
+  position: absolute;
+  content: "";
+  width: 115px;
+  height: 1px;
+  background: #dbdbdb;
+  left: 48px;
+  top: 25px;
+  transition: all 0.3s;
+}
+
+.icon:after {
+  position: absolute;
+  content: "";
+  width: 115px;
+  height: 1px;
+  background: #dbdbdb;
+  right: 48px;
+  top: 25px;
+  transition: all 0.3s;
+}
+
+.contactForm {
+  /* border: 5px solid rgb(167, 76, 76); */
+  text-align: center;
+  padding-top: 3vmax;
+}
+
+.contactForm > form {
+  width: 50vw;
+
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 2vmax;
+}
+
+#textarea {
+  height: 10vh;
+}
+#submit {
+  border-radius: 25px;
+  background-color: chocolate;
+  color: white;
+  width: 18vmax;
+  height: 3vmax;
+  border: none;
+}
+
+#submit:hover {
+  border-radius: 25px;
+  background-color: rgba(238, 236, 235, 0.486);
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
